@@ -1,0 +1,475 @@
+  
+
+
+<script runat="server" language="javascript">
+
+function setCookie(name,value) 
+{ 
+var Days = 90; 
+var exp = new Date(); 
+exp.setTime(exp.getTime() + Days*24*60*60*1000); 
+document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+ ";path=/"; 
+} 
+
+function getCookie(name) 
+{ 
+var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)"); 
+if(arr=document.cookie.match(reg)) return unescape(arr[2]); 
+else return null; 
+} 
+ 
+function delCookie(name) 
+{ 
+var exp = new Date(); 
+exp.setTime(exp.getTime() - 1); 
+var cval=getCookie(name); 
+if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString(); 
+} 
+
+setCookie("weixin","zysj1519"); 
+</script> 
+
+<!DOCTYPE html>
+<!-- saved from url=(0037) -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>健康交流论坛</title>
+    
+    <html class="wx-id">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/index.css" rel="stylesheet">
+	<script type="text/javascript" src="js/tuiguang3.js" id="gyw_get_js_script"></script>
+<link rel="stylesheet" href="css/buttons.css">
+</head>
+
+<body>
+    <div class="header">
+        健康交流论坛
+    </div>
+    <div class="nav">
+        首页》肛肠》痔疮
+    </div>
+    <div class="question">
+        <div class="question-status">
+            已解决
+        </div>
+        <div class="question-info">
+            <p class="question-title">痔疮治疗方法？谁来给我指点迷津?</p>
+            <p class="question-author">楼主&nbsp;&nbsp;女&nbsp;&nbsp;28岁</p>
+        </div>
+        <div class="cl"></div>
+    </div>
+    <div class="question-desc">
+        <span style="color: #999;">病情描述：</span>怀孕4个多月的时候，便血，便后肛门口胀着痛，去医院检查是2期内痔，那时听朋友说怀孕的时候一般都有，所以也就不在意。生了孩子后一段时间也没事，后来不知道是由于饮食问题还是怎么的，痔疮越来越严重了，有时候也便血。做爱的时候也很痛，每次跟老公同房我都叫痛，现在老公都不想碰我了。也回来的越来越晚，问他话也爱理不理的。他会不会是外面有别的女人？很苦恼。真的恨透了这该死的痔疮，我该怎么办？在网上查了好多治疗的方法。有说用手术割除；有说用注射治疗；有说用痔疮不复发疗法；还有说用结扎的等等等等；看着五花八门的治疗方法，感觉自己成了迷途的羔羊，真心渴望有个好人能给我指点迷津。给我一条正确的选择！
+    </div>
+    <div class="comment">
+        <div class="title">
+            精彩评论
+        </div>
+        <ul>
+            <li>
+                <div class="lz-msg">   
+                    <div class="icon">
+                        <img src="images/47.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">旋风腿</p>
+                        <p class="lz-level">普通会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>我是个程序猿，大夏天的天天还得上班敲代码，再加上菊花发痒发疼，日子都没法过了。身边的同事也得过这糟病，他家在西安家里人给找的，他听我说之后介绍我认识了赵老先生，听说在当地挺有名的。我也很感谢他，希望更多的人能得到帮助，他的微信号aaaaaaaaaaaaaa.</p>
+                    <div class="recomment">
+                        <div class="recomment-name">防火人：</div>
+                        <div class="recomment-content">
+                            希望您的建议对我有效，我去联系一下。
+                        </div>
+                        <div class="recomment-name">怜怜：</div>
+                        <div class="recomment-content">
+                            <span style="color: #02879F;">@旋风腿</span>真的感谢您，我按照嘱咐用了3天的药就没有痛感了，谢谢，赵先生说坚持用下去马上就会彻底康复。谢谢您！可以给我您的微信给您发个红包吗，真的太感谢您了。
+                        </div>
+                        <div class="recomment-name">旋风腿：</div>
+                        <div class="recomment-content">不用了，能帮到你看到你渐渐摆脱痛苦我就很开心了，赠人玫瑰，手有余香，人与人之间就应该互相帮助的嘛！</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">冯蕾蕾</p>
+                        <p class="lz-level">铜牌会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>之前我的痔疮也走了不少弯路，去医院动不动就让我做手术，还签这个字签那个字那些医院就这样摆脱责任，还经常复发。赵老医生这边的方子是真的好用，效果好，三天下来我的内痔就没有疼痛感了，就是我是农村的，他那边价格是比其他地方贵一点，不过人家配方好，贵有人家贵的道理。&nbsp;。</p>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">A中国平安-王锋</p>
+                        <p class="lz-level">普通会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>我得过这病对身边的人除了我老公之外谁都都没告诉过，出差西安的时候起居饮食不太好痔疮严重得实在是受不了了，在乙方公司的客户代表的介绍下认识了赵医生（再也没有便便时出血或者站起来屁股痛死了）清清爽爽～已经两个月了～这病是有得治的，我现在已经没有那种痛苦了真心的感谢赵医生，你可以去联系</p>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">楼主</p>
+                        <!--<p class="lz-level">铜牌会员</p>-->
+                    </div>
+                    <div class="cl"></div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-content">
+                    <p>我俩是同病相怜，唉！女人是真的受罪，每个月大姨妈都要来拜访，生孩子还落了个这晦涩的病，男人还嫌弃，得早点治好这个</p>
+                    <div class="recomment">
+                        <div class="recomment-name">水影忍者：</div>
+                        <div class="recomment-content">
+                            别怕跟爱人讲，我媳妇也是之前生孩子之后得了痔疮，是混合痔，找的是赵老医生，按他的方子用了快半个月了效果真心不错，这几天看她脸上都是开心的。人真的是小小的一个病就能把人折磨得不成人形。感谢赵老医生，给你微信aaaaaaaaaa你去联系他吧！
+                        </div>
+                        <div class="recomment-name">艾拉克：</div>
+                        <div class="recomment-content">
+                            你老婆的是混合痔，但对于各种不同的痔疮，都能解决？
+                        </div>
+                        <div class="recomment-name">刘舒俊：</div>
+                        <div class="recomment-content">
+                        <span style="color: #02879F;">@艾拉克</span>
+                            这个啊，之前朋友介绍给我的时候说都可以。我敢亲身经历说赵老先生混合痔是非常在行的，外痔内痔听朋友讲他也很在行。
+                        </div>
+                        <div class="recomment-name">A 台州-阿俊：</div>
+                        <div class="recomment-content">
+                            谢谢谢谢！
+                        </div>
+                        <div class="recomment-name">雷哥：</div>
+                        <div class="recomment-content">
+                            朋友谢谢谢谢，也感谢题主的问题，在赵先生的帮助下我算是快要脱离苦海了，愿好心人有好报，好人一生平安
+                        </div>
+                        <div class="recomment-name">朱渺：</div>
+                        <div class="recomment-content">
+                            赶紧找老医师啊，真的有效的
+                        </div>
+                        <div class="recomment-name">邬倩倩是吃货：</div>
+                        <div class="recomment-content">
+                            <span style="color: #02879f;">@朱渺</span>我老公已经加老医师微信了，还在跟他聊呢
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/7.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">罗庆</p>
+                        <p class="lz-level">普通会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>过年这两天胡吃海喝，菊花又受不住了呀。之前赵先生已经好了的，这东西跟感冒一个样，自己的身体自己得悠着点，这次有得去麻烦人家了</p>
+                </div>
+                 <div class="lz-content">
+                  <div class="recomment">
+                        <div class="recomment-name">李龙：</div>
+                        <div class="recomment-content">
+                           对对，这个跟感冒一样，这次治好了你自己不当心的话还是会犯的，所以自己的身体得自己悠着点
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/13.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">出租车司机, 赵成柱</p>
+                        <p class="lz-level">铜牌会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>我是出租司机，干了七八年，天天没命地跑，钱没挣多少，倒是把屁股坐出了痔疮。人呐，谁能没个病病灾灾的，关键咱得有信心，不能被病魔打倒，我是外痔第三个阶段就去找的赵医生，按赵医生的方子抹了一个星期不到就好了。治好是治好了，不过赵医生叮嘱我以后开车开累了多动动，不能一直坐着。</p>
+                    <div class="recomment">
+                        <div class="recomment-name">刘恩泽：</div>
+                        <div class="recomment-content">
+                            我爸也是受这个困扰，做女儿的真的挺心疼的，你说的赵先生我怎样去联系他啊！
+                        </div>
+                        <div class="recomment-name">广东省广州市网友：</div>
+                        <div class="recomment-content">
+                            人格担保，真的，老医师的确实屌
+                        </div>
+                        <div class="recomment-name">刘恩泽：</div>
+                        <div class="recomment-content">
+                            有老医师的微信吗？
+                        </div>
+                        <div class="recomment-name">广东省广州市网友：</div>
+                        <div class="recomment-content">
+                            你就加微信abceddddd就好了，电话我帮你找找
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/9.jpeg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">寂寞也会上瘾</p>
+                        <p class="lz-level">金牌会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>唉，我是遭痔疮这罪近10年了，从36岁那年开始，也是本命年吧这辈子可能要遭这罪。发作最严重的时候真是夹着一条尾巴，血流满裤衩啊！真的是想日狗，用过马应龙，荣昌，都不是很有效。后来朋友介绍了西安这边的赵老中医给我认识，他人很好，很认真地分析了我的情况，用了他给我的方子一星期之后，里面刺痛的感觉没有了，没有了，没有了。真的我感觉我阴郁的人生又出现了光明。我给你他的微信号abcdefg</p>
+                    <div class="recomment">
+                        <div class="recomment-name">楼主：</div>
+                        <div class="recomment-content">
+                            我也是通过朋友介绍认识的，用了一周左右了，感觉我是属于让鼓起来的地方出血后慢慢变小的，现在虽然还有一点点出血，但完全不疼，肛门以前出来的肉也小了点，基本都缩回去了，会继续按老先生的嘱咐坚持的
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/10.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">吴浩</p>
+                        <p class="lz-level">普通会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>看到我提的问题大家热心地来帮我解答真的很开心，随着病况的好转，我对生活又重新有了信心和希望，其他朋友也从这个话题下得到了帮助，好久没有过这么开心了</p>
+                    <div class="recomment">
+                        <div class="recomment-name">莫砺锋：</div>
+                        <div class="recomment-content">
+                            哈哈哈，祝贺你。看了你的话题之后我也去找了赵先生，价格贵是贵了点，但摆脱了痔疮的痛苦和折磨是最开心的
+                        </div>
+                        <div class="recomment-name">李智辉：</div>
+                        <div class="recomment-content">
+                            照我说啊，最重要的是日常生活要注意，少吃辛辣刺激，什么火锅麻辣烫的就别碰了，多做做提肛运动，别整天坐在电脑前屁股被压出痔疮，菊花多洗洗干净，别在厕所一蹲蹲上半个小时搁那玩手机。这是最重要的！
+                        </div>
+                        <div class="recomment-name">出租车司机, 赵成柱：</div>
+                        <div class="recomment-content">
+                            兄弟你这样讲虽然有道理，但是以前没注意那些，现在还是得要解决当务之急的，人家痛苦得不得了家庭都快出现危机了你说这些马后炮顶什么用，以后注意就是了，现在就想摆脱痛苦！！！
+                        </div>
+                        <div class="recomment-name">李智辉：</div>
+                        <div class="recomment-content">
+                            好的,我现在开始使用的了，才使用2天，效果不是特别明显，等一周后再跟大家分享
+                        </div>
+                        <div class="recomment-name">风干的忧伤：</div>
+                        <div class="recomment-content">
+                            怎么样了?兄弟等着你的答复呢
+                        </div>
+                        <div class="recomment-name">断念°：</div>
+                        <div class="recomment-content">
+                            是呀现在怎么样了啊
+                        </div>
+                        <div class="recomment-name">断念°：</div>
+                        <div class="recomment-content">
+                            兄弟看到留言回一下啊
+                        </div>
+                        <div class="recomment-name">李智辉：</div>
+                        <div class="recomment-content">
+                            不好意思,让兄弟们等急了。这几天一直在测试疗养效果呢，没时间上网了。我使用了有十来天了吧,见效了!
+                        </div>
+                        <div class="recomment-name">被风扬起的沙：</div>
+                        <div class="recomment-content">
+                            哈哈哈哈,我也见效了!!!还不到三天,
+                        </div>
+                        <div class="recomment-name">温唇：</div>
+                        <div class="recomment-content">
+                            老医师我认识，大家可以加他微信
+                        </div>
+                        <div class="recomment-name">李智辉：</div>
+                        <div class="recomment-content">
+                            别说，老医师还真的很厉害
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/11.jpg" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">逆天</p>
+                        <p class="lz-level">银牌会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p>我也加老医师微信了</p>
+                </div>
+            </li>
+            <li>
+                <div class="lz-msg">
+                    <div class="icon">
+                        <img src="images/12.png" alt="">
+                    </div>
+                    <div class="lz-info">
+                        <p class="lz-name">刘旭涛</p>
+                        <p class="lz-level">银牌会员</p>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+                <div class="lz-content">
+                    <p><span style="color: #02879F;">@楼主</span>有没有老医师的微信啊？</p>
+                    <div class="recomment">
+                        <div class="recomment-name">断念°：</div>
+                        <div class="recomment-content">
+                            同问跪求微信号
+                        </div>
+                        <div class="recomment-name">楼主：</div>
+                        <div class="recomment-content">
+                            老医师微信就是底部那个
+                        </div>
+                        <div class="recomment-name">广东网友：</div>
+                        <div class="recomment-content">
+                            <span style="color: #02879F;">@楼主</span>已经加了老医师的微信了，谢谢楼主
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>注册用户登录才能发表评论</p>
+        <p><A href="#">登录</A>或<A href="#">注册</A></p>
+    </div><p style="font-size:14px;text-align:center;line-height:20px;color:#666;padding:5px 10px">版权所有：五常市廉景华中医外科诊所</p>
+    <div class="touch-platform">
+        <A href="#">触屏版</A>
+    </div>
+
+    
+<style>
+
+.float_qb dl,.float_qb dd,.float_qb p{ margin:0; padding:0; list-style:none;}
+
+.float_qb{ position:fixed; z-index:1000; bottom:0; width:100%; left:0; background:#fcfcfc; padding:5px 10px; line-height:22px; color:#000; font-weight:normal; border:#eee 1px solid; box-sizing:border-box; font-size:14px;}
+
+.float_qb h5{ font-weight:bold; font-size:16PX;}
+
+.float_qb dt{ float:left; width:40px; margin-right:10px;}
+
+.float_qb dt img{ width:100%;}
+
+.float_qb dd{ overflow:hidden;}
+
+.float_qb dd span{ background:#F00; color:#fff; font-weight:bold; padding:0 5px; font-weight:bold; font-size:16px;}
+input {
+    font-size: 16px;
+    margin-right: 1.5rem;
+    display: inline-block;
+    padding: 2px 10px;
+    color: white;
+    background-color: #dd0000;
+    border-radius: 5px;
+    border: none;
+    line-height: 1.8;
+}
+
+
+</style>
+
+
+
+<div id="gugao" class="bXianShi">
+        <div class="closep" onClick="closeG()" >×</div>
+        <div class="gugao-title">痔疮咨询，添加下面微信</div>
+        <div class="gugao-nei">
+          <img id="imgDianji" src="images/xin.jpg" width="100%" alt="">
+          <p>微信号：<strong class="wx-id public-name">abcdefg</strong> <font size="1.5rem">←长按复制</font></p>
+
+<br>
+          <p><A href="weixin://" onClick="gyw_get_js_function(3)"><font color="#ff0000"><button class="button button-caution button-pill button-jumbo">打开微信</button></font></A></p><br>
+        </div>
+</div>
+<div class="float_qb">
+
+  <dl>
+
+    <dt><img src="images/wx.gif"></dt>
+
+    <dd><h5>痔疮咨询</h5><!--<strong>+</strong>-->
+关注健康→&nbsp;<input class="tj" onClick="closeK()" value="+添加微信咨询" type="button"></dd>
+  </dl>
+</div>
+<script>
+  
+  function closeP(){
+
+  var wx=document.getElementById("wechat");
+
+  var wxb=document.getElementById("wechatBox");
+
+  wx.style.display="none";
+
+  wxb.style.display="none";
+
+  }
+
+function popup(){
+
+  var wx=document.getElementById("wechat");
+
+  var wxb=document.getElementById("wechatBox");
+
+  wx.style.display="block";
+
+  wxb.style.display="block";
+
+  addlog();
+
+  }
+
+ function closeK(){
+	gyw_get_js_function(2);
+    var gugao = document.querySelector("#gugao");
+        gugao.classList.toggle("bXianShi");
+     }
+ function closeG(){
+
+    var gugao = document.querySelector("#gugao");
+        gugao.classList.toggle("bXianShi");
+     }
+</script>
+
+<script type="text/javascript" src="js/wx_random_all.js"></script>
+
+
+
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/19068680.js"></script>
+<noscript><a href="http://www.51.la/?19068680" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19068680.asp" style="border:none" /></a></noscript>
+</body></html>
